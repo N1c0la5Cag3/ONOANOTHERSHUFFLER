@@ -18,7 +18,7 @@ public class ShuffleExample {
     public static void main(String[] args) {
        
        /*Generates an and fills an int array with the values between 1 and 10
-        in ascending order*/
+       in ascending order*/
        int[] pleaseShuffle = new int [10];
        for(int i = 1; i <= pleaseShuffle.length; i++){
            pleaseShuffle[i-1] = i;
@@ -61,11 +61,14 @@ public class ShuffleExample {
             imArray[index] = imArray[i];
             imArray[i] = toSwap;
         }
+        
+        /*Returns the same array that was inputed, but now with its elements in
+        a random order*/
         return imArray;
     }
     
     /**
-     * Displays all elements of an array, in order of ascending indexes
+     * Displays all elements of an int array, in order of ascending indexes
      * PRE: int array with at least 1 element is inputted
      * POST: all elements of the array are displayed in the output window
      */
